@@ -51,3 +51,4 @@ npm-debug.log.*
 
 .github
 .vscode
+key.json
