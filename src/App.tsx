@@ -16,7 +16,7 @@ const TimePanelStyle = {
 // };
 
 type MyState = { date: string };
-class TimePanel extends React.Component <null,MyState> {
+class TimePanel extends React.Component<null, MyState> {
   timer: Timeout;
 
   constructor(props) {
@@ -46,7 +46,7 @@ class TimePanel extends React.Component <null,MyState> {
 
 export default function App() {
   return (
-    <div style={ {textAlign: 'center'}}>
+    <div style={{ textAlign: 'center' }}>
       <TimePanel />
       <CoinPanel />
     </div>
