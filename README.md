@@ -8,7 +8,7 @@
 ## Currently Features
 
 - [x] Show Local date and time
-- [x] Show Crypto market pice from Coingecko API
+- [x] Show Crypto market price from Coingecko API
 - [ ] Task to Do list
 - [ ] Expense Tracker
 
