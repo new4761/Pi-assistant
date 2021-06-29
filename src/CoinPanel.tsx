@@ -20,7 +20,7 @@ export default class CoinPanel extends React.Component<null, MyState> {
 
   componentDidMount() {
     this.updateCoinsPrice();
-    this.timer = setInterval(() => this.updateCoinsPrice(), 1000 * (60 * 15));
+    this.timer = setInterval(() => this.updateCoinsPrice(), 1000 * (60 * 5));
   }
 
   componentWillUnmount() {

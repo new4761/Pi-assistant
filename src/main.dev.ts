@@ -68,11 +68,13 @@ const createWindow = async () => {
   };
 
   mainWindow = new BrowserWindow({
+    fullscreen: true,
     show: false,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
     webPreferences: {
+      devTools: false,
       nodeIntegration: true,
     },
   });
