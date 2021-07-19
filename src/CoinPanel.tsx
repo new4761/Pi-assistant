@@ -46,10 +46,10 @@ export default class CoinPanel extends React.Component<null, MyState> {
       <ul>
         {this.state.data.map((item) => (
           <li key={item.id}>
-            <h1>
-              <img src={item.image} width="40" /> {item.id} :{' '}
+            <h2>
+              <img src={item.image} width="30" /> {item.id} :{' '}
               {item.current_price} THB
-            </h1>
+            </h2>
           </li>
         ))}
       </ul>

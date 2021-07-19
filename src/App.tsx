@@ -8,7 +8,7 @@ const dateToLocalTime = () => {
 };
 
 const TimePanelStyle = {
-  fontSize: '3.5rem',
+  fontSize: '2.5rem',
   textAlign: 'center',
 };
 // const Hello = () => {
@@ -40,7 +40,7 @@ class TimePanel extends React.Component<null, MyState> {
 
   render() {
     const { date } = this.state;
-    return <h1 style={TimePanelStyle}>{date}</h1>;
+    return <p style={TimePanelStyle}>{date}</p>;
   }
 }
 
