@@ -1,6 +1,16 @@
 import React from 'react';
 
-const coinsList = ['0bitcoin', 'Cbinancecoin', 'Cethereum', 'Caave','Csmooth-love-potion','Calpha-finance','Csolana','Cthetan-arena','Corca']
+const coinsList = [
+  '0bitcoin',
+  'Cbinancecoin',
+  'Cethereum',
+  'Caave',
+  'Csmooth-love-potion',
+  'Calpha-finance',
+  'Csolana',
+  'Cthetan-arena',
+  'Corca',
+];
 const baseUrl = 'https://api.coingecko.com/api/v3';
 let parameterUrl = '/coins/markets?vs_currency=THB&ids=';
 
@@ -43,16 +53,18 @@ export default class CoinPanel extends React.Component<null, MyState> {
 
   render() {
     return (
-      <ul>
-        {this.state.data.map((item) => (
-          <li key={item.id}>
-            <h5>
-              <img src={item.image} width="20" />  {item.id} :{' '}
-              {item.current_price} THB
-            </h5>
-          </li>
-        ))}
+      <ul >
+        {this.state.data.map((item) => {
+          return (
+            <li key={item.id} style={{ display: 'inline-block',margin: "0px 10px 10px 5px"}}>
+              <h3>
+                <img src={item.image} width="20" /> {item.id} : {item.current_price} THB
+              </h3>
+            </li>
+          );
+        })}
       </ul>
+
     );
   }
 }
