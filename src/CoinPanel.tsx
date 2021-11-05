@@ -1,6 +1,6 @@
 import React from 'react';
 
-const coinsList = ['0bitcoin', 'Cbinancecoin', 'Cethereum', 'Caave','Csmooth-love-potion','Calpha-finance'];
+const coinsList = ['0bitcoin', 'Cbinancecoin', 'Cethereum', 'Caave','Csmooth-love-potion','Calpha-finance','Csolana','Cthetan-arena','Corca']
 const baseUrl = 'https://api.coingecko.com/api/v3';
 let parameterUrl = '/coins/markets?vs_currency=THB&ids=';
 
@@ -22,7 +22,7 @@ export default class CoinPanel extends React.Component<null, MyState> {
   componentDidMount() {
     this.updateCoinsPrice();
     //every 5 min
-    this.timer = setInterval(() => this.updateCoinsPrice(), 1000 * (60 * 5));
+    this.timer = setInterval(() => this.updateCoinsPrice(), 1000 * (60 * 2));
   }
 
   componentWillUnmount() {
@@ -46,10 +46,10 @@ export default class CoinPanel extends React.Component<null, MyState> {
       <ul>
         {this.state.data.map((item) => (
           <li key={item.id}>
-            <h2>
-              <img src={item.image} width="30" /> {item.id} :{' '}
+            <h5>
+              <img src={item.image} width="20" />  {item.id} :{' '}
               {item.current_price} THB
-            </h2>
+            </h5>
           </li>
         ))}
       </ul>

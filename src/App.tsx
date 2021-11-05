@@ -8,7 +8,7 @@ const dateToLocalTime = () => {
 };
 
 const TimePanelStyle = {
-  fontSize: '2.5rem',
+  fontSize: '2.0rem',
   textAlign: 'center',
 };
 // const Hello = () => {
