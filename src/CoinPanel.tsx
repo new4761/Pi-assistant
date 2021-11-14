@@ -10,7 +10,7 @@ const coinsList = [
   'Csolana',
   'Cthetan-arena',
   'Corca',
-];
+  'Cgamefi'];
 const baseUrl = 'https://api.coingecko.com/api/v3';
 let parameterUrl = '/coins/markets?vs_currency=THB&ids=';
 
