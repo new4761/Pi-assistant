@@ -6,9 +6,9 @@ const coinsList = [
   'Cethereum',
   'Caave',
   'Csmooth-love-potion',
-  'Calpha-finance',
   'Csolana',
   'Caspo-world',
+  'Cthetan-arena',
   'Corca',
   'Cgamefi'];
 const baseUrl = 'https://api.coingecko.com/api/v3';
