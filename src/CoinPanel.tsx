@@ -5,10 +5,10 @@ const coinsList = [
   'Cbinancecoin',
   'Cethereum',
   'Caave',
-  'Csmooth-love-potion',
+  'Cdexsport',
   'Csolana',
   'Caspo-world',
-  'Cthetan-arena',
+  'Ctitan-hunters',
   'Corca',
   'Cgamefi'];
 const baseUrl = 'https://api.coingecko.com/api/v3';
