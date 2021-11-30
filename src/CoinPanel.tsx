@@ -6,13 +6,13 @@ const coinsList = [
   'Cethereum',
   'Caave',
   'Cdexsport',
-  'Csolana',
+  'Cantex',
   'Caspo-world',
   'Ctitan-hunters',
-  'Corca',
+  'Cthetan-coin',
   'Cgamefi'];
 const baseUrl = 'https://api.coingecko.com/api/v3';
-let parameterUrl = '/coins/markets?vs_currency=THB&ids=';
+let parameterUrl = '/coins/markets?vs_currency=USD&ids=';
 
 coinsList.forEach((element: string) => {
   parameterUrl += '%2' + element;
@@ -58,7 +58,7 @@ export default class CoinPanel extends React.Component<null, MyState> {
           return (
             <li key={item.id} style={{ display: 'inline-block',margin: "0px 10px 10px 5px"}}>
               <h3>
-                <img src={item.image} width="20" /> {item.id} : {item.current_price} THB
+                <img src={item.image} width="20" /> {item.id} : {item.current_price} USD
               </h3>
             </li>
           );
