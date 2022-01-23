@@ -9,7 +9,7 @@ const coinsList = [
   'Cantex',
   'Caspo-world',
   'Ctitan-hunters',
-  'Cthetan-coin',
+  'Cheroestd-cgc',
   'Cheroes-td'];
 const baseUrl = 'https://api.coingecko.com/api/v3';
 let parameterUrl = '/coins/markets?vs_currency=USD&ids=';
