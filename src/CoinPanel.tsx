@@ -6,16 +6,17 @@ const coinsList = [
   'Cethereum',
   'Caave',
   'Cdexsport',
-  'Cantex',
-  'Caspo-world',
-  'Ctitan-hunters',
+  'Calpha-finance',
+  'Coptimism',
+  'Csolana',
   'Cheroestd-cgc',
-  'Cheroes-td'];
+  'Cbinance-usd',
+];
 const baseUrl = 'https://api.coingecko.com/api/v3';
 let parameterUrl = '/coins/markets?vs_currency=USD&ids=';
 
 coinsList.forEach((element: string) => {
-  parameterUrl += '%2' + element;
+  parameterUrl += `%2${element}`;
 });
 parameterUrl += '&order=gecko_desc&per_page=100&page=1&sparkline=false';
 type MyState = { data: Promise<any>[] };
